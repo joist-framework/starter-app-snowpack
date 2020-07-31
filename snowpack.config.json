@@ -1,7 +1,15 @@
 {
   "mount": {
     "public": "/",
-    "src": "/_dist_"
+    "src": "/target"
   },
-  "plugins": []
+  "plugins": [
+    [
+      "@snowpack/plugin-run-script",
+      { "cmd": "tsc --noEmit", "watch": "$1 --watch" }
+    ]
+  ],
+  "installOptions": {
+    "installTypes": true
+  }
 }
