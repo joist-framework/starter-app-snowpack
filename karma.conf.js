@@ -5,7 +5,6 @@ process.env.CHROME_BIN = require('puppeteer').executablePath();
 module.exports = (config) => {
   const options = createDefaultConfig(config);
 
-  options.frameworks = ['jasmine', ...options.frameworks];
   options.files = [{ pattern: 'target/**/*.spec.js', type: 'module' }];
   options.browsers = ['ChromeHeadless'];
   options.esm = { nodeResolve: true };
