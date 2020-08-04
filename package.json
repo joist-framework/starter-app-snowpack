@@ -2,7 +2,7 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "test": "tsc && wtr targett/**/*.spec.ts --node-resolve --puppeteer",
+    "test": "tsc && wtr target/**/*.spec.ts --node-resolve --puppeteer",
     "bundle": "npm run build && rollup -c"
   },
   "dependencies": {
