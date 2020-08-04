@@ -1,3 +1,5 @@
+import { expect } from '@open-wc/testing';
+
 import { AppElement } from './app.element';
 
 describe('AppElement', () => {
@@ -10,14 +12,14 @@ describe('AppElement', () => {
   });
 
   it('should render', () => {
-    expect(el).toBeTruthy();
+    expect(el).to.be.instanceOf(AppElement);
   });
 
   it('should increment', async () => {
     await el.increment();
 
-    expect(el.state.value).toBe(1);
-    expect(el.shadowRoot!.querySelector('span')!.innerHTML).toBe(
+    expect(el.state.value).to.equal(1);
+    expect(el.shadowRoot!.querySelector('span')!.innerHTML).to.equal(
       '<!---->1<!---->'
     );
   });
@@ -25,8 +27,8 @@ describe('AppElement', () => {
   it('should render', async () => {
     await el.decrement();
 
-    expect(el.state.value).toBe(-1);
-    expect(el.shadowRoot!.querySelector('span')!.innerHTML).toBe(
+    expect(el.state.value).to.equal(-1);
+    expect(el.shadowRoot!.querySelector('span')!.innerHTML).to.equal(
       '<!---->-1<!---->'
     );
   });

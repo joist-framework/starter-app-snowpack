@@ -2,7 +2,7 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "test": "tsc && karma start",
+    "test": "tsc && wtr targett/**/*.spec.ts --node-resolve",
     "bundle": "npm run build && rollup -c"
   },
   "dependencies": {
@@ -13,11 +13,10 @@
     "tslib": "2.0.0"
   },
   "devDependencies": {
-    "@open-wc/testing-karma": "4.0.1",
-    "@types/jasmine": "3.5.11",
-    "karma": "5.1.1",
-    "karma-jasmine": "3.3.1",
-    "puppeteer": "5.2.1",
+    "@open-wc/testing": "^2.5.20",
+    "@types/mocha": "^8.0.1",
+    "@web/test-runner": "^0.6.57",
+    "@web/test-runner-puppeteer": "^0.5.8",
     "rollup": "2.23.0",
     "snowpack": "2.7.5",
     "typescript": "3.9.7"
