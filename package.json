@@ -2,8 +2,7 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "test": "tsc && karma start",
-    "bundle": "npm run build && rollup -c"
+    "test": "tsc && karma start"
   },
   "dependencies": {
     "@joist/component": "1.0.6",

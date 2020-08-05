@@ -1,13 +1,14 @@
 {
   "mount": {
     "public": "/",
-    "src": "/target"
+    "src": "/__dist__"
   },
   "plugins": [
     [
       "@snowpack/plugin-run-script",
       { "cmd": "tsc --noEmit", "watch": "$1 --watch" }
-    ]
+    ],
+    ["./tools/bundle.js", {}]
   ],
   "installOptions": {
     "installTypes": true
