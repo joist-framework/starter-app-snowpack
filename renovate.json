@@ -1,5 +1,10 @@
 {
-  "extends": [
-    "config:base"
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "groupName": "Joist Packages",
+      "packagePatterns": ["^@joist"],
+      "enabled": true
+    }
   ]
 }
