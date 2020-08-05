@@ -7,7 +7,7 @@
   "author": "deebloo",
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build",
+    "build": "snowpack build --clean",
     "test": "wtr src/**/*.spec.ts --node-resolve",
     "test:watch": "wtr src/**/*.spec.ts --node-resolve --watch"
   },

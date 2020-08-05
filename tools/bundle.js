@@ -21,6 +21,7 @@ module.exports = function (snowpackConfig, _pluginOptions) {
 
       const bundle = await rollup({
         input: `${buildDirectory}${snowpackConfig.mount['src/']}/main.js`,
+        preserveEntrySignatures: false,
       });
 
       return bundle.write({
