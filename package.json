@@ -12,7 +12,7 @@
     "tslib": "2.0.0"
   },
   "devDependencies": {
-    "@open-wc/testing": "2.5.20",
+    "@open-wc/testing": "2.5.21",
     "@open-wc/testing-karma": "4.0.1",
     "@web/test-runner": "0.6.59",
     "rollup": "2.23.0",
