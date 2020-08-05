@@ -74,7 +74,7 @@ web_modules/
 # build output
 build
 target
-# .DS_Store
+.DS_Store
 
 # Serverless directories
 .serverless/
