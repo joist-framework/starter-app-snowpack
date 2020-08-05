@@ -1,11 +1,14 @@
 {
-  "name": "joist-starter-snowpack",
-  "version": "1.0.0",
-  "private": true,
+  "name": "@joist/starter-snowpack",
+  "version": "1.0.1",
+  "keywords": [
+    "csa-template"
+  ],
   "description": "Starter Joist application with snowpack",
   "license": "MIT",
   "author": "deebloo",
   "scripts": {
+    "prepare": "snowpack",
     "start": "snowpack dev",
     "build": "snowpack build --clean",
     "test": "wtr src/**/*.spec.ts --node-resolve",
