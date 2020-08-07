@@ -1,13 +1,6 @@
 import { component, State, handle, JoistElement, get } from '@joist/component';
 import { template } from '@joist/component/lit-html';
 import { html } from 'lit-html';
-import { inject } from '@joist/di';
-
-class FooService {}
-
-class BarService {
-  constructor(@inject(FooService) public foo: FooService) {}
-}
 
 @component<number>({
   tagName: 'app-root',
@@ -48,12 +41,6 @@ export class AppElement extends JoistElement {
 
   @get(BarService)
   public bar!: BarService;
-
-  connectedCallback() {
-    super.connectedCallback();
-
-    console.log(this.bar.foo);
-  }
 
   @handle('dec') decrement() {
     return this.state.setValue(this.state.value - 1);

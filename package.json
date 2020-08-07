@@ -18,11 +18,11 @@
     "@joist/di": "1.1.0",
     "@joist/router": "1.1.0",
     "lit-html": "1.2.1",
-    "tslib": "2.0.0"
+    "tslib": "2.0.1"
   },
   "devDependencies": {
     "@open-wc/testing": "2.5.20",
-    "@web/test-runner": "0.6.60",
+    "@web/test-runner": "0.6.63",
     "rollup-plugin-terser": "6.1.0",
     "snowpack": "2.7.6",
     "typescript": "3.9.7"
