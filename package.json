@@ -11,8 +11,7 @@
     "prepare": "snowpack",
     "start": "snowpack dev",
     "build": "snowpack build --clean",
-    "test": "wtr src/**/*.spec.ts --node-resolve",
-    "test:watch": "wtr src/**/*.spec.ts --node-resolve --watch"
+    "test": "tsc && wtr target/**/*.spec.js --node-resolve"
   },
   "dependencies": {
     "@joist/component": "1.1.0",
@@ -23,7 +22,6 @@
   },
   "devDependencies": {
     "@open-wc/testing": "2.5.20",
-    "@web/dev-server-esbuild": "0.1.5",
     "@web/test-runner": "0.6.60",
     "rollup-plugin-terser": "6.1.0",
     "snowpack": "2.7.6",
