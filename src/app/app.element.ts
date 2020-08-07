@@ -39,9 +39,6 @@ export class AppElement extends JoistElement {
   @get(State)
   public state!: State<number>;
 
-  @get(BarService)
-  public bar!: BarService;
-
   @handle('dec') decrement() {
     return this.state.setValue(this.state.value - 1);
   }
