@@ -19,6 +19,11 @@ Your app is ready to be deployed!
 
 This CSA app will use rollup to generate a more performant bundle when you build.
 
+## npm test
+
+Runs unit tests in browser with `@web/test-runner`.
+Run `npm run test:watch` to run in watch mode;
+
 ### Q: What about Eject?
 
 No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
