@@ -5,6 +5,11 @@
       "groupName": "Joist Packages",
       "packagePatterns": ["^@joist"],
       "enabled": true
+    },
+    {
+      "groupName": "@web/test-runner packages",
+      "packagePatterns": ["^@web"],
+      "enabled": true
     }
   ]
 }
