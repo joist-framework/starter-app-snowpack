@@ -23,7 +23,7 @@
   "devDependencies": {
     "@open-wc/testing": "2.5.24",
     "@web/dev-server-esbuild": "0.2.1",
-    "@web/test-runner": "0.7.4",
+    "@web/test-runner": "0.7.5",
     "rollup-plugin-terser": "7.0.0",
     "snowpack": "2.8.0",
     "typescript": "4.0.2"
