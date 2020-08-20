@@ -26,6 +26,6 @@
     "@web/test-runner": "0.7.3",
     "rollup-plugin-terser": "7.0.0",
     "snowpack": "2.8.0",
-    "typescript": "3.9.7"
+    "typescript": "4.0.2"
   }
 }
