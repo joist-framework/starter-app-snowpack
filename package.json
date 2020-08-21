@@ -2,7 +2,9 @@
   "name": "@joist/starter-snowpack",
   "version": "1.0.10",
   "keywords": [
-    "csa-template"
+    "csa-template",
+    "joist",
+    "web-components"
   ],
   "description": "Starter Joist application with snowpack",
   "license": "MIT",

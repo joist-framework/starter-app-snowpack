@@ -5,29 +5,28 @@ import { template, html } from '@joist/component/lit-html';
   tagName: 'app-root',
   state: 0,
   shadowDom: 'open',
+  styles: [
+    `* {
+      font-size: 200%;
+    }
+
+    span {
+      width: 4rem;
+      display: inline-block;
+      text-align: center;
+    }
+
+    button {
+      width: 4rem;
+      height: 4rem;
+      border: none;
+      border-radius: 10px;
+      background-color: seagreen;
+      color: white;
+    }`,
+  ],
   render: template(({ state, run }) => {
     return html`
-      <style>
-        * {
-          font-size: 200%;
-        }
-
-        span {
-          width: 4rem;
-          display: inline-block;
-          text-align: center;
-        }
-
-        button {
-          width: 4rem;
-          height: 4rem;
-          border: none;
-          border-radius: 10px;
-          background-color: seagreen;
-          color: white;
-        }
-      </style>
-
       <button @click="${run('dec')}">-</button>
       <span>${state}</span>
       <button @click="${run('inc')}">+</button>
