@@ -27,9 +27,9 @@ import { template, html } from '@joist/component/lit-html';
   ],
   render: template(({ state, run }) => {
     return html`
-      <button @click="${run('dec')}">-</button>
+      <button @click="${run('decrement', -1)}">-</button>
       <span>${state}</span>
-      <button @click="${run('inc')}">+</button>
+      <button @click="${run('increment', 1)}">+</button>
     `;
   }),
 })
@@ -37,11 +37,9 @@ export class AppElement extends JoistElement {
   @get(State)
   public state!: State<number>;
 
-  @handle('dec') decrement() {
-    return this.state.setValue(this.state.value - 1);
-  }
-
-  @handle('inc') increment() {
-    return this.state.setValue(this.state.value + 1);
+  @handle('increment')
+  @handle('decrement')
+  decrement(_: Event, num: number) {
+    return this.state.setValue(this.state.value + num);
   }
 }
