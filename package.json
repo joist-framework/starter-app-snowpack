@@ -18,8 +18,8 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build --clean",
-    "test": "wtr src/**/*.spec.ts",
-    "test:watch": "wtr src/**/*.spec.ts --watch"
+    "test": "wtr ",
+    "test:watch": "wtr --watch"
   },
   "dependencies": {
     "@joist/component": "1.6.0",
