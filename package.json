@@ -6,9 +6,15 @@
     "joist",
     "web-components"
   ],
-  "description": "Starter Joist application with snowpack",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joist-framework/starter-app-snowpack.git"
+  },
   "author": "deebloo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joist-framework/joist-framework/starer-app-snowpack/issues"
+  },
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build --clean",
@@ -26,6 +32,7 @@
     "@open-wc/testing": "2.5.25",
     "@web/dev-server-esbuild": "0.2.3",
     "@web/test-runner": "0.7.15",
+    "@web/test-runner-puppeteer": "0.6.3",
     "rollup-plugin-terser": "7.0.1",
     "snowpack": "2.10.1",
     "typescript": "4.0.2"
