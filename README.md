@@ -17,8 +17,6 @@ You will also see any lint errors in the console.
 Builds a static copy of your site to the `build/` folder.
 Your app is ready to be deployed!
 
-This CSA app will use rollup to generate a more performant bundle when you build.
-
 ## npm test
 
 Runs unit tests in browser with `@web/test-runner`.
