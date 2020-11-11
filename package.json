@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@open-wc/testing": "2.5.32",
-    "@snowpack/plugin-optimize": "0.2.8",
+    "@snowpack/plugin-optimize": "0.2.9",
     "@web/dev-server-esbuild": "0.2.6",
     "@web/test-runner": "0.9.7",
     "@web/test-runner-puppeteer": "0.7.2",
