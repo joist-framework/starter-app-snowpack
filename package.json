@@ -32,7 +32,7 @@
     "@open-wc/testing": "2.5.32",
     "@snowpack/plugin-optimize": "0.2.10",
     "@web/dev-server-esbuild": "0.2.8",
-    "@web/test-runner": "0.10.0",
+    "@web/test-runner": "0.10.2",
     "@web/test-runner-puppeteer": "0.7.3",
     "snowpack": "2.18.2",
     "typescript": "4.1.2"
