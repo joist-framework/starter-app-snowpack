@@ -26,7 +26,7 @@
     "@joist/di": "1.8.6",
     "@joist/router": "1.8.6",
     "lit-html": "1.4.1",
-    "tslib": "2.3.1"
+    "tslib": "2.8.0"
   },
   "devDependencies": {
     "@open-wc/testing": "3.0.1",
